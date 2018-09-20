@@ -24,7 +24,7 @@ function draw() {
 	    // map(value, start1, stop1, start2, stop2, [withinBounds])
 	nSoundLevel = map(soundLevel,0,0.1,windowHeight/16,windowHeight/2);
     for(i =0; i<maxSpectrum; i+=1){
-        fill(50*spectrum[i],100,100);
+        fill(100+50*spectrum[i],100,100);
         ellipse(windowWidth/2, windowHeight/2, nSoundLevel-i);
     }
 }
